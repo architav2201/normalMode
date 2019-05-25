@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:textColor="#1B5E20"
+        android:layout_gravity="center_horizontal"
+        android:text="Enter original age of DEATH!" />
+
+    <EditText
+        android:id="@+id/originalAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:hint="Enter age between 1-100"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="SUBMIT"
+        android:background="#9E9E9E"
+        android:onClick="submitfn"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:textColor="#1B5E20"
+        android:layout_gravity="center_horizontal"
+        android:text="Guess the age!" />
+
+    <EditText
+        android:id="@+id/guessedAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Lets see"
+        android:inputType="number"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="guess?"
+        android:background="#9E9E9E"
+        android:layout_marginTop="20dp"
+        android:onClick="guessfn"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed-light"
+
+        android:textColor="#1B5E20"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Predicting the unpredictable?" />
+
+
+
+
+</LinearLayout>
+</ScrollView>
